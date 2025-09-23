@@ -1,0 +1,94 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1e28;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #2a2f3d;
+    padding: 3em;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+header h1 {
+    color: #4CAF50; 
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #c0c0c0;
+    margin-bottom: 2.5em;
+}
+
+.container-revisao {
+    text-align: left;
+}
+
+.bloco-info {
+    background-color: #3a3f4c;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    border-left: 4px solid #5d5dff;
+}
+
+.bloco-info h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    color: #ffffff;
+    border-bottom: 1px solid #555;
+    padding-bottom: 0.5em;
+}
+
+.bloco-info p {
+    margin-bottom: 0.7em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.bloco-info p:last-child {
+    margin-bottom: 0;
+}
+
+.bloco-info strong {
+    color: #c0c0c0;
+    font-weight: 600;
+}
+
+.bloco-info span {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#inicioBtn {
+    width: 100%;
+    padding: 1.2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #5d5dff;
+    margin-top: 2em;
+}
+
+#inicioBtn:hover {
+    background-color: #4646e6;
+    transform: translateY(-2px);
+}

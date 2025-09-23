@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Setores e Assentos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/setores_assentos.css">
+
+</head>
+<body>
+    <header>
+        <h2>FestivalX</h2>
+        <nav>
+            <a href="#setores">Setores</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Selecione seu Setor e Assento</h1>
+        <button id="cta-button">Comprar Agora</button>
+    </section>
+
+    <section class="mapa-visual" id="mapa-visual">
+        <div class="mapa-imagem">
+            <img src="./assets/imagens/palco.png" alt="Plano do Evento - Mapa dos setores">
+        </div>
+    </section>
+
+    <section class="setores" id="setores">
+        <h2>Escolha seu Setor</h2>
+        <div class="cards" id="cards-setores">
+            </div>
+    </section>
+
+    <section class="mapa" id="mapa" style="display: none;">
+        <h2>Mapa de Assentos</h2>
+            <div class="legenda">
+                <div class="legenda-item">
+                    <div class="quadrado livre"></div>
+                    <span>Livre</span>
+                </div>
+                <div class="legenda-item">
+                    <div class="quadrado ocupado"></div>
+                    <span>Ocupado</span>
+                </div>
+                <div class="legenda-item">
+                    <div class="quadrado selecionado"></div>
+                    <span>Selecionado</span>
+                </div>
+            </div>
+        <div class="assentos" id="grade-assentos">
+            </div>
+        <div class="info-compra">
+            <p>Ingressos selecionados: <span id="contador-ingressos">0</span></p>
+            <button id="comprar-btn">Comprar</button>
+        </div>
+        <button id="voltar-btn">Voltar para Setores</button>
+    </section>
+
+    <section class="compra-resumo" id="compra-resumo" style="display: none;">
+        <h2>Resumo da Compra</h2>
+        <div class="resumo-detalhes">
+            <p>Setor: <span id="setor-nome-resumo"></span></p>
+            <p>Quantidade: <span id="quantidade-resumo"></span></p>
+            <p>Assentos: <span id="assentos-resumo"></span></p>
+            <p class="total-final">Total: <span id="total-resumo"></span></p>
+        </div>
+        <button id="finalizar-compra-btn">Finalizar Compra</button>
+        <button id="voltar-resumo-btn">Voltar</button>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2025 FestivalX - Todos os direitos reservados</p>
+        <p>Nos siga nas redes sociais: <a href="https://www.instagram.com/"> Instagram </a> | <a href="https://www.facebook.com/"> Facebook </a> | <a href="https://www.x.com/"> X </a></p>
+    </footer>
+
+    <script src="./assets/scripts/setores_assentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção de Pets</title>
+    	<style>
+		body {
+			background-color: rgba(162, 250, 156, 0.403);
+			font-family: Arial, sans-serif;
+            margin: 0;
+		}
+
+		header {
+			text-align: center;
+			background-color: #91d8f4df;
+			color: #fff;
+            padding: 30px
+		}
+
+        .pet-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            margin: 15px;
+            padding: 15px;
+            width: 27.5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pet-card img { 
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px;
+            margin: 5px;
+            flex-wrap: wrap;
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Adote um novo amigo</h1>
+        <p>Encontre o seu pet aqui</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="pet-card">
+                <img src="./imagens/alice.jpg">
+                <p>Nome: Alice</p>
+                <p>Um cão amigo</p>
+            </div>
+            <div class="pet-card">
+                <img src="./imagens/felix.jpg">
+                <p>Nome: Felix</p>
+                <p>Um cão protetor</p>
+            </div>
+            <div class="pet-card">
+                <img src="./imagens/frederico.jpg">
+                <p>Nome: Frederico</p>
+                <p>Um cão companheiro</p>
+            </div>
+            <div class="pet-card">
+                <img src="./imagens/jacob.jpg">
+                <p>Nome: Jacob</p>
+                <p>Um cão adorável</p>
+            </div>        
+            <div class="pet-card">
+                <img src="./imagens/jorge.jpg">
+                <p>Nome: Jorge</p>
+                <p>Um cão carinhoso</p>
+            </div>        
+            <div class="pet-card">
+                <img src="./imagens/lessie.jpg">
+                <p>Nome: Lessie</p>
+                <p>Um cão brincalhão</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

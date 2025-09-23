@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão do Pedido - FestivalX</title>
+    <link rel="stylesheet" href="./assets/css/revisao_info.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Obrigado pela sua compra!</h1>
+            <p>Seu pedido foi confirmado com sucesso.</p>
+        </header>
+
+        <section class="container-revisao">
+            
+            <div class="bloco-info">
+                <h2>Evento</h2>
+                <p id="evento-nome"></p>
+                <p id="evento-data"></p> </div>
+            
+            <div class="bloco-info">
+                <h2>Seus Ingressos</h2>
+                <p><strong>Setor:</strong> <span id="ingresso-setor"></span></p>
+                <p><strong>Quantidade:</strong> <span id="ingresso-quantidade"></span></p>
+                <p><strong>Assentos:</strong> <span id="ingresso-assentos"></span></p>
+                <p><strong>Total dos Ingressos:</strong> <span id="ingresso-total"></span></p>
+            </div>
+
+            <div class="bloco-info">
+                <h2>Serviços Adicionais</h2>
+                <p id="servicos-lista"></p>
+            </div>
+            
+            <div class="bloco-info">
+                <h2>Pagamento</h2>
+                <p><strong>Método:</strong> <span id="pagamento-metodo"></span></p>
+            </div>
+
+        </section>
+
+        <button id="inicioBtn">Voltar ao Início</button>
+    </main>
+
+    <script src="./assets/scripts/revisao_info.js"></script>
+</body>
+</html>

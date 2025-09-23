@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Poupança</title>
+    <link rel="stylesheet" href="./calculadoraFinanceira.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Calculadora de Poupança</h1>
+        <p>Planeje o seu futuro financeiro. Preencha os campos abaixo para simular a sua poupança.</p>
+
+        <form id="savings-form">
+            <div class="form-group">
+                <label for="objetivo">Qual é o seu objetivo financeiro? (R$)</label>
+                <input type="number" id="objetivo" placeholder="Ex: 10000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="inicial">Qual o seu saldo inicial? (R$)</label>
+                <input type="number" id="inicial" placeholder="Ex: 500" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensal">Quanto vai depositar por mês? (R$)</label>
+                <input type="number" id="mensal" placeholder="Ex: 200" required>
+            </div>
+
+            <div class="form-group">
+                <label for="juros">Qual a taxa de juros mensal? (%)</label>
+                <input type="number" id="juros" step="0.01" placeholder="Ex: 0.5" required>
+            </div>
+
+            <button type="submit">Calcular Projeção</button>
+        </form>
+
+        <div id="resultado"></div>
+
+        <button type="button" id="reset-button" class="hidden">Calcular outro valor</button>
+    </div>
+
+    <script src="calculadoraFinanceira.js"></script>
+</body>
+</html>

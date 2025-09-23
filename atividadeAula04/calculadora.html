@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculadora.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculadora" id="calculadora">
+        <input type="text" id="display"><br><br>
+
+        <input type="button" value="1" onclick="setNumero(this.value)">
+        <input type="button" value="2" onclick="setNumero(this.value)">
+        <input type="button" value="3" onclick="setNumero(this.value)">
+        <input type="button" value="*" onclick="setNumero(this.value)">
+        <br><br>
+        <input type="button" value="4" onclick="setNumero(this.value)">
+        <input type="button" value="5" onclick="setNumero(this.value)">
+        <input type="button" value="6" onclick="setNumero(this.value)">
+        <input type="button" value="-" onclick="setNumero(this.value)">
+        <br><br>
+        <input type="button" value="7" onclick="setNumero(this.value)">
+        <input type="button" value="8" onclick="setNumero(this.value)">
+        <input type="button" value="9" onclick="setNumero(this.value)">
+        <input type="button" value="+" onclick="setNumero(this.value)">
+        <br><br>
+        <input type="button" value="/" onclick="setNumero(this.value)">
+        <input type="button" value="0" onclick="setNumero(this.value)">
+        <input type="button" value="." onclick="setNumero(this.value)">
+        <input type="button" value="=" id="igual" onclick="setIgual()">
+        <br><br>
+        <input type="button" value="limpar" id="limpar" onclick="limpar()">
+    </div>
+    <script src="./calculadora.js"></script>
+</body>
+</html>

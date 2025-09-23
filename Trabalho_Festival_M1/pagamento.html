@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - FestivalX</title>
+    <link rel="stylesheet" href="./assets/css/pagamento.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Pagamento</h1>
+        </header>
+
+        <form id="formPagamento">
+            <section class="resumo-compra">
+                <h2>Resumo do Pedido</h2>
+                <div class="resumo-item">
+                    <span>Setor:</span>
+                    <strong id="resumo-setor"></strong>
+                </div>
+                <div class="resumo-item">
+                    <span>Ingressos:</span>
+                    <strong id="resumo-quantidade"></strong>
+                </div>
+                 <div class="resumo-item">
+                    <span>Assentos:</span>
+                    <strong id="resumo-assentos"></strong>
+                </div>
+                <div class="resumo-item">
+                    <span>Serviços Adicionais:</span>
+                    <strong id="resumo-servicos">Nenhum</strong>
+                </div>
+                <div class="resumo-total">
+                    <span>Total:</span>
+                    <strong id="resumo-total"></strong>
+                </div>
+            </section>
+
+            <section class="detalhes-pagamento">
+                <h2>Detalhes do Cartão de Crédito</h2>
+                
+                <div class="input-grupo">
+                    <label for="numCartao">Número do Cartão</label>
+                    <input type="text" id="numCartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                </div>
+                
+                <div class="input-grupo">
+                    <label for="nomeCartao">Nome no Cartão</label>
+                    <input type="text" id="nomeCartao" placeholder="Nome completo" required>
+                </div>
+
+                <div class="linha-flex">
+                    <div class="input-grupo">
+                        <label for="validade">Validade</label>
+                        <input type="text" id="validade" placeholder="MM/AA" maxlength="5" required>
+                    </div>
+                    <div class="input-grupo">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+                    </div>
+                </div>
+            </section>
+
+            <div class="botoes-acao">
+                <button type="submit" id="finalizarPagamentoBtn">Finalizar Pagamento</button>
+                <button type="button" id="voltarBtn">Voltar</button>
+            </div>
+            </section>
+        </form>
+    </main>
+
+    <script src="./assets/scripts/pagamento.js"></script>
+</body>
+</html>

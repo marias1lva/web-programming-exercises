@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2f7; 
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    color: #1e3a8a; 
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 700;
+    color: #4b5563;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6; 
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:not(.btn-back) {
+    background-color: #2563eb; 
+    color: #fff;
+}
+
+button:not(.btn-back):hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px); 
+}
+
+.btn-back {
+    background-color: #9ca3af;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn-back:hover {
+    background-color: #6b7280;
+    transform: translateY(-2px);
+}
+
+.resumo {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+#final {
+    text-align: center;
+}
+
+#final h2 {
+    color: #16a34a;
+}

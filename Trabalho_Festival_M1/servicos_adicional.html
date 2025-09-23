@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Adicionais</title>
+    <link rel="stylesheet" href="./assets/css/serv_adicional.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Serviços Adicionais</h1>
+        </header>
+
+        <form id="servicosForm">
+            <div class="checkbox-container">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="estacnmto" name="servico" value="Estacionamento">
+                    <label for="estacnmto">+ Estacionamento</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="openBar" name="servico" value="Open Bar">
+                    <label for="openBar">+ Open Bar</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="openFood" name="servico" value="Open Food">
+                    <label for="openFood">+ Open Food</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="acessoBackstage" name="servico" value="Acesso Backstage">
+                    <label for="acessoBackstage">+ Acesso Backstage</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="transfer" name="servico" value="Transfer">
+                    <label for="transfer">+ Transfer</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="merchan" name="servico" value="Merchandising">
+                    <label for="merchan">+ Merchandising</label>
+                </div>
+            </div>
+
+            <div class="botoes-acao">
+                <input type="button" value="Adicionar serviço" id="adicionarBtn">
+                <input type="button" value="Remover serviço" id="removerBtn">
+            </div>
+
+            <div class="resultado">
+                <label for="servicosAdInput">Serviços selecionados:</label>
+                <input type="text" id="servicosAdInput" readonly> </div>
+
+            <input type="submit" value="Próxima etapa" id="proximaEtapaBtn">
+        </form>
+    </main>
+
+    <script src="assets/scripts/serv_adicional.js"></script>
+</body>
+</html>
