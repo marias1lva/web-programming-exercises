@@ -8,7 +8,7 @@ const posts = [
     { id: 3, descricao: "Louie um gato brincalhão", imagem: "https://placecats.com/louie/300/200" },
 ];
 
-function buscaPostPoriD(id){  
+function buscaPostPoriD(id){
   return posts.find( p => p.id === Number(id));
 }
 
