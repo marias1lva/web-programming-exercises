@@ -1,0 +1,222 @@
+type: collection.insomnia.rest/5.0
+name: Atividade Biblioteca API
+meta:
+  id: wrk_aa637689a8c94cf5b5e552e1b4f60e0a
+  created: 1761002031747
+  modified: 1761003155353
+  description: ""
+collection:
+  - url: http://localhost:3000/livros
+    name: GET Livros
+    meta:
+      id: req_bc04528036b548d297f3f7851197475e
+      created: 1761002040620
+      modified: 1761002117259
+      isPrivate: false
+      description: ""
+      sortKey: -1761002040620
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros
+    name: POST Livro
+    meta:
+      id: req_a20a72fb504941649d5489e38dd4f762
+      created: 1761002107663
+      modified: 1761002364264
+      isPrivate: false
+      description: ""
+      sortKey: -1761002107663
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_a361dc235332482b995d2cfd2ab4e22e
+          name: titulo
+          value: Meu Livro
+          description: ""
+          disabled: false
+          type: text
+          multiline: false
+        - id: pair_f6770db635394b609517fa43d45ca684
+          name: autor
+          value: Autor Exemplo
+          description: ""
+          disabled: false
+          type: text
+          multiline: false
+        - id: pair_6c13640f4e9340dcab5e23b124a86598
+          name: genero
+          value: Ficção
+          description: ""
+          disabled: false
+          type: text
+          multiline: false
+        - id: pair_db93d879455c4575b8d953c2bfe4b819
+          name: anoPublicacao
+          value: "2025"
+          description: ""
+          disabled: false
+          type: text
+          multiline: false
+        - id: pair_75c2c0360c1a4c619c92502fafa1a11d
+          name: editora
+          value: Editora XYZ
+          description: ""
+          disabled: false
+          type: text
+          multiline: false
+        - id: pair_08c31f7070fc4fd7ab4120f58d77a806
+          name: sinopse
+          value: Uma história legal
+          description: ""
+          disabled: false
+          type: text
+          multiline: false
+        - id: pair_0ae862d111e14876afbb73c16609c736
+          name: capa
+          value: ""
+          description: ""
+          disabled: false
+          type: file
+          fileName: C:\Users\maria\Downloads\capa.jpg
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros/68f6c4830f1202299b83b39f
+    name: GET Livro por ID
+    meta:
+      id: req_1243759d50a748138362779cbf431ac0
+      created: 1761002679344
+      modified: 1761002720904
+      isPrivate: false
+      description: ""
+      sortKey: -1761002679344
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros/68f6c4830f1202299b83b39f
+    name: PUT Livro
+    meta:
+      id: req_bef1805db1c048609cd0a4e91165653c
+      created: 1761002729320
+      modified: 1761002940234
+      isPrivate: false
+      description: ""
+      sortKey: -1761002729320
+    method: PUT
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_3c3c7bc080014c9eb6141cb3b25e54a4
+          name: titulo
+          value: Meu Livro 2
+          description: ""
+          disabled: false
+        - id: pair_d9581edcece343499305e0392fcd5120
+          name: autor
+          value: Autor Exemplo
+          description: ""
+          disabled: false
+        - id: pair_98eec2c3339946abb32cc5c5d1613186
+          name: genero
+          value: Ficção
+          description: ""
+          disabled: false
+        - id: pair_59ab2ab17dbf47a4a7dcb2770a57d96f
+          name: anoPublicacao
+          value: "2025"
+          description: ""
+          disabled: false
+        - id: pair_23a302c93ea74548ab85341dcfd95f11
+          name: editora
+          value: Editora XYZ
+          description: ""
+          disabled: false
+        - id: pair_42c1f56359094d7288a3a77813c54251
+          name: sinopse
+          value: Uma história legal
+          description: ""
+          disabled: false
+        - id: pair_9a2f148dcc00440f824a1a672ac0c1e7
+          name: capa
+          value: ""
+          description: ""
+          disabled: false
+          type: file
+          fileName: C:\Users\maria\Downloads\capa.jpg
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros/68f6c4830f1202299b83b39f
+    name: New Request
+    meta:
+      id: req_9818e006fa6949e88233b75ffa49f08c
+      created: 1761002933666
+      modified: 1761002951200
+      isPrivate: false
+      description: ""
+      sortKey: -1761002933666
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ada56cd7b855e55207e30f54f8f2f192ad026fd5
+    created: 1761002031756
+    modified: 1761002031756
+environments:
+  name: Base Environment
+  meta:
+    id: env_ada56cd7b855e55207e30f54f8f2f192ad026fd5
+    created: 1761002031751
+    modified: 1761002031751
+    isPrivate: false
